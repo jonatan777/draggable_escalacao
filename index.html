@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <title>imputs</title>
+
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.min.css" />
+   <!-------    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">   -------->
+
+   <link rel="stylesheet" href="style.css" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Draggable.min.js"></script>
+
+</head>
+
+<body>
+
+
+   <div id="formuarios">
+
+      <!--------------------------form 1---------------------------------->
+
+      <div id="time1">
+         <h3>Time 1</h3>
+         <form class="w3-container" id="form1" action="">
+            1: <input type="text" name="fname" value=""><br>
+            2: <input type="text" name="lname" value=""><br>
+            3: <input type="text" name="lname" value=""><br>
+            4: <input type="text" name="lname" value=""><br>
+            5: <input type="text" name="lname" value=""><br>
+            6: <input type="text" name="lname" value=""><br>
+            7: <input type="text" name="lname" value=""><br>
+            8: <input type="text" name="lname" value=""><br>
+            9: <input type="text" name="lname" value=""><br>
+            10: <input type="text" name="lname" value=""><br>
+            11: <input type="text" name="lname" value=""><br>
+            12: <input type="text" name="lname" value=""><br>
+            13: <input type="text" name="lname" value=""><br>
+            14: <input type="text" name="lname" value=""><br>
+            15: <input type="text" name="lname" value=""><br>
+            16: <input type="text" name="lname" value=""><br>
+            17: <input type="text" name="lname" value=""><br>
+            18: <input type="text" name="lname" value=""><br>
+            19: <input type="text" name="lname" value=""><br>
+            20: <input type="text" name="lname" value=""><br>
+
+         </form>
+
+         <br>
+         <button class="w3-button w3-blue" onclick="Time1Function()">time 1</button>
+         <br>
+      </div>
+      <!--------------------------form 2---------------------------------->
+
+      <div id="time2">
+         <h3>Time 2</h3>
+         <form id="form2" action="">
+            1: <input type="text" name="fname" value=""><br>
+            2: <input type="text" name="lname" value=""><br>
+            3: <input type="text" name="lname" value=""><br>
+            4: <input type="text" name="lname" value=""><br>
+            5: <input type="text" name="lname" value=""><br>
+            6: <input type="text" name="lname" value=""><br>
+            7: <input type="text" name="lname" value=""><br>
+            8: <input type="text" name="lname" value=""><br>
+            9: <input type="text" name="lname" value=""><br>
+            10: <input type="text" name="lname" value=""><br>
+            11: <input type="text" name="lname" value=""><br>
+            12: <input type="text" name="lname" value=""><br>
+            13: <input type="text" name="lname" value=""><br>
+            14: <input type="text" name="lname" value=""><br>
+            15: <input type="text" name="lname" value=""><br>
+            16: <input type="text" name="lname" value=""><br>
+            17: <input type="text" name="lname" value=""><br>
+            18: <input type="text" name="lname" value=""><br>
+            19: <input type="text" name="lname" value=""><br>
+            20: <input type="text" name="lname" value=""><br>
+         </form>
+
+         <br>
+         <button class="w3-button w3-yellow" onclick="Time2Function()">time 2</button>
+         <br>
+
+      </div>
+
+   </div>
+   <!----------------------------------------- fim dos forms  ----------------------------------------->
+
+   <main>
+
+
+
+      <!----------------------------------------- escalacao time 1  ----------------------------------------->
+
+      <div class="escalacao">
+
+         <div class="avatares1">
+
+            <h3 id="1"></h3>
+            <h3 id="2"></h3>
+            <h3 id="3"></h3>
+            <h3 id="4"></h3>
+            <h3 id="5"></h3>
+            <h3 id="6"></h3>
+            <h3 id="7"></h3>
+            <h3 id="8"></h3>
+            <h3 id="9"></h3>
+            <h3 id="10"></h3>
+            <h3 id="11"></h3>
+            <h3 id="12"></h3>
+            <h3 id="13"></h3>
+            <h3 id="14"></h3>
+            <h3 id="15"></h3>
+            <h3 id="16"></h3>
+            <h3 id="17"></h3>
+            <h3 id="18"></h3>
+            <h3 id="19"></h3>
+            <h3 id="20"></h3>
+
+         </div>
+
+         <h3>2 tempo:</h3>
+         <h3>gols:</h3>
+         <h3>expulsão:</h3>
+
+
+
+
+      </div>
+
+
+
+
+      <!----------------------------------------- placar rodada e data  ----------------------------------------->
+
+
+      <div class="escalacao1">
+         <h1>escalação</h1>
+
+         <h2>pelada do dia:</h2>
+         <h3 id="data">01/01/2023</h3>
+         <input type="text" name="name" value="" id="data_pelada">
+
+         <h2>Rodada:</h2>
+         <h2 id="rodada"></h2>
+         <input type="text" name="name" value="" id="rodada_pelada">
+
+         <h2>placar:</h2>
+         <h1 id="placar"></h1>
+         <input type="text" name="name" value="" id="placar_pelada">
+         <br></br>
+
+         <h2 id="numbers">numeros de gols</h2>
+         <h2 id="numbers1"></h2>
+         <h2 id="numbers2"></h2>
+         <h2 id="numbers3"></h2>
+         <h2 id="numbers4"></h2>
+         <h2 id="numbers5"></h2>
+         <h2 id="numbers6"></h2>
+         <h2 id="numbers7"></h2>
+         <h2 id="numbers8"></h2>
+         <h2 id="numbers9"></h2>
+         <h2 id="numbers10"></h2>
+
+         <form id="form3" action=""">
+            <input type="text" name="name" value=""><br>
+            <input type="text" name="name" value=""><br>
+            <input type="text" name="name" value=""><br>
+            <input type="text" name="name" value=""><br>
+            <input type="text" name="name" value=""><br>
+            <input type="text" name="name" value=""><br>
+            <input type="text" name="name" value=""><br>
+            <input type="text" name="name" value=""><br>
+            <input type="text" name="name" value=""><br>
+            <input type="text" name="name" value=""><br>
+         </form>
+
+         <br></br>
+         <button class="w3-button w3-green" id="botao" onclick="dataPelada()">OK!</button>
+
+      </div>
+
+
+      <!----------------------------------------- escalacao time 2  ----------------------------------------->
+
+      <div class="escalacao">
+
+         <div class="avatares2">
+            <h3 id="21"></h3>
+            <h3 id="22"></h3>
+            <h3 id="23"></h3>
+            <h3 id="24"></h3>
+            <h3 id="25"></h3>
+            <h3 id="26"></h3>
+            <h3 id="27"></h3>
+            <h3 id="28"></h3>
+            <h3 id="29"></h3>
+            <h3 id="30"></h3>
+            <h3 id="31"></h3>
+            <h3 id="32"></h3>
+            <h3 id="33"></h3>
+            <h3 id="34"></h3>
+            <h3 id="35"></h3>
+            <h3 id="36"></h3>
+            <h3 id="37"></h3>
+            <h3 id="38"></h3>
+            <h3 id="39"></h3>
+            <h3 id="40"></h3>
+         </div>
+         <h3>2 tempo:</h3>
+         <h3>gols:</h3>
+         <h3>expulsão:</h3>
+
+      </div>
+   </main>
+
+
+   <script src="form.js"> </script>
+   <script src="script.js"> </script>
+</body>
+
+
+</html>
